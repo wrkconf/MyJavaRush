@@ -10,10 +10,9 @@ public class Solution {
     public final static int C = A * B;
 
     public static void main(String[] args) {
-        getValue();
     }
 
-    public static int getValue() {
+    public int getValue() {
         return C;
     }
 }
