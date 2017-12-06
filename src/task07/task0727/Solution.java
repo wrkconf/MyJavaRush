@@ -1,4 +1,4 @@
-package com.javarush.task.task07.task0727;
+package task07.task0727;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,14 +20,18 @@ public class Solution {
             list.add(s);
         }
 
-        ArrayList<String> listUpperCase = new ArrayList<String>();
-        for (int i = 0; i < list.size(); i++) {
-            String s = list.get(i);
-            listUpperCase.add(s.toUpperCase());
+        ArrayList<String> listOddEven = new ArrayList<String>();
+        for (int i = 0; i< list.size(); i++){
+            if ((list.get(i).length())%2==0){
+                //если четно, то удваиваем
+                listOddEven.add(list.get(i) + list.get(i));
+            }else{
+                listOddEven.add(list.get(i) + list.get(i) + list.get(i));
+            }
+        }
+        for (int i = 0; i < listOddEven.size(); i++) {
+            System.out.println(listOddEven.get(i));
         }
 
-        for (int i = 0; i < listUpperCase.size(); i++) {
-            System.out.println(listUpperCase.get(i));
-        }
     }
 }

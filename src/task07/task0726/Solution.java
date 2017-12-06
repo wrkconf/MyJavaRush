@@ -1,4 +1,4 @@
-package com.javarush.task.task07.task0726;
+package task07.task0726;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,10 +17,13 @@ public class Solution {
 
         while (true) {
             String name = reader.readLine();
-
             if (name.isEmpty()) break;
+            int age = Integer.parseInt(reader.readLine());
+            int weight = Integer.parseInt(reader.readLine());
+            int tailLength = Integer.parseInt(reader.readLine());
 
-            Cat cat = new Cat(name);
+
+            Cat cat = new Cat(name, age, weight, tailLength);
             CATS.add(cat);
         }
 
