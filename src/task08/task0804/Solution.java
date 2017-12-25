@@ -6,7 +6,7 @@ import java.util.Map;
 /* 
 Вывести на экран список ключей
 */
-/*
+
 public class Solution {
     public static void main(String[] args) throws Exception {
         HashMap<String, String> map = new HashMap<String, String>();
@@ -25,7 +25,11 @@ public class Solution {
     }
 
     public static void printKeys(Map<String, String> map) {
-        //напишите тут ваш код
+        for (Map.Entry<String, String> pair : map.entrySet())
+        {
+            String key = pair.getKey();
+            String value = pair.getValue();
+            System.out.println(key);
+        }
     }
 }
-*/
