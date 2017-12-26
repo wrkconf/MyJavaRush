@@ -25,7 +25,10 @@ public class Solution {
     }
 
     public static void printValues(Map<String, String> map) {
-        //напишите тут ваш код
+        for (Map.Entry<String, String> pair :map.entrySet())
+        {
+            String value = pair.getValue();
+            System.out.println(value);
+        }
     }
 }
-*/

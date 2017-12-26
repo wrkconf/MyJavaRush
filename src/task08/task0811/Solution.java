@@ -7,25 +7,29 @@ import java.util.List;
 /* 
 Квартет «Методы»
 */
-/*
+
 public class Solution {
     public static List getListForGet() {
-        //напишите тут ваш код
+        List arrayList = new ArrayList();
+        return arrayList;
 
     }
 
     public static List getListForSet() {
-        //напишите тут ваш код
+        List arrayList = new ArrayList();
+        return arrayList;
 
     }
 
     public static List getListForAddOrInsert() {
-        //напишите тут ваш код
+        List linkedList = new LinkedList();
+        return linkedList;
 
     }
 
     public static List getListForRemove() {
-        //напишите тут ваш код
+        List linkedList = new LinkedList();
+        return linkedList;
 
     }
 
@@ -33,4 +37,3 @@ public class Solution {
 
     }
 }
-*/

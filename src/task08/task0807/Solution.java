@@ -5,15 +5,17 @@ import java.util.*;
 /* 
 LinkedList и ArrayList
 */
-/*
+
 public class Solution {
     public static Object createArrayList() {
-        //напишите тут ваш код
+        List arrayList = new ArrayList();
+        return arrayList;
 
     }
 
     public static Object createLinkedList() {
-        //напишите тут ваш код
+        List linkedList = new LinkedList();
+        return linkedList;
 
     }
 
@@ -21,4 +23,3 @@ public class Solution {
 
     }
 }
-*/

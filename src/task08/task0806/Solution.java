@@ -2,11 +2,12 @@ package task08.task0806;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /* 
 Коллекция HashMap из Object
 */
-/*
+
 public class Solution {
     public static void main(String[] args) throws Exception {
         HashMap<String, Object> map = new HashMap<String, Object>();
@@ -21,8 +22,11 @@ public class Solution {
         map.put("Hugs", 111111111111L);
         map.put("Comp", (double) 123);
 
-        //напишите тут ваш код
+        for (Map.Entry<String, Object> pair : map.entrySet()){
+            String key = pair.getKey();
+            Object value = pair.getValue();
+            System.out.println(key + " " + value);
+        }
 
     }
 }
-*/

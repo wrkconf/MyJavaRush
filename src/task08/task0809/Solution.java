@@ -8,7 +8,7 @@ import java.util.List;
 /* 
 Время для 10 тысяч вставок
 */
-/*
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(getTimeMsOfInsert(new ArrayList()));
@@ -17,9 +17,17 @@ public class Solution {
 
     public static long getTimeMsOfInsert(List list) {
         //напишите тут ваш код
+       Date date = new Date();
+       Long dateOne = date.getTime();
+       //Long dateOne =  System.currentTimeMillis();
 
         insert10000(list);
 
+        Date dateNew = new Date();
+        Long dateSecond = dateNew.getTime();
+        //Long dateSecond =  System.currentTimeMillis();
+        Long d = dateSecond - dateOne;
+        return d;
         //напишите тут ваш код
 
     }
@@ -30,4 +38,3 @@ public class Solution {
         }
     }
 }
-*/

@@ -8,7 +8,7 @@ import java.util.List;
 /* 
 Время для 10 тысяч вызовов get
 */
-/*
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(getTimeMsOfGet(fill(new ArrayList())));
@@ -24,10 +24,17 @@ public class Solution {
 
     public static long getTimeMsOfGet(List list) {
         //напишите тут ваш код
+        Date date = new Date();
+        Long dateOne = date.getTime();
 
         get10000(list);
 
+        Date dateNew = new Date();
+        Long dateSecond = dateNew.getTime();
+        Long d = dateSecond - dateOne;
+        return d;
         //напишите тут ваш код
+
 
     }
 
@@ -40,4 +47,3 @@ public class Solution {
         }
     }
 }
-*/
