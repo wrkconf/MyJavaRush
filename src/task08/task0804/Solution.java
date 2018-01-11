@@ -28,8 +28,9 @@ public class Solution {
         for (Map.Entry<String, String> pair : map.entrySet())
         {
             String key = pair.getKey();
-            String value = pair.getValue();
             System.out.println(key);
         }
+
+        //for(String key:map.keySet())System.out.println(key);
     }
 }

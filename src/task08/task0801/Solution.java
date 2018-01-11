@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        Set set = new HashSet();
+        HashSet<String> set = new HashSet();
         set.add("арбуз");
         set.add("банан");
         set.add("вишня");
@@ -21,11 +21,7 @@ public class Solution {
         set.add("земляника");
         set.add("ирис");
         set.add("картофель");
-        Iterator iterator = set.iterator();
-        while (iterator.hasNext())
-        {
-            String text = (String) iterator.next();
-            System.out.println(text);
-        }
+        for(String s : set)System.out.println(s);
+
     }
 }
